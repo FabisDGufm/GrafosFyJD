@@ -1,6 +1,4 @@
-# Dependencias del proyecto GrafosFyJD
 
-# Framework web
 fastapi==0.104.1
 uvicorn==0.24.0
 python-multipart==0.0.6
@@ -8,17 +6,13 @@ python-multipart==0.0.6
 # Validacion de datos
 pydantic==2.5.2
 
-# Manejo de grafos y mapas
 osmnx==1.7.1
 networkx==3.2.1
 geopandas==0.14.1
 
-# Procesamiento de datos
 numpy==1.26.2
 pandas==2.1.3
 
-# Visualización (opcional, para generar imágenes del grafo)
 matplotlib==3.8.2
 
-# Utilidades
 python-dotenv==1.0.0

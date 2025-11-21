@@ -40,6 +40,10 @@ class RutaEvitarRequest(BaseModel):
     destino: str
     evitar: str
 
+class RutaTraficoRequest(BaseModel):
+    origen: str
+    destino: str
+
 @app.get("/")
 def root():
     return {"status": "ok", "message": "No Waze API"}
@@ -184,6 +188,34 @@ def ruta_evitar(req: RutaEvitarRequest):
         "nodos": len(resultado["ruta"]),
         "aristas": len(resultado["ruta"]) - 1,
         "ruta_ids": [str(n) for n in resultado["ruta"]]
+    }
+
+@app.post("/api/ruta/trafico")
+def ruta_trafico(req: RutaTraficoRequest):
+    algorithms = get_algo()
+    try:
+        origen_id = int(req.origen)
+        destino_id = int(req.destino)
+    except ValueError:
+        return {"error": "IDs invalidos"}
+
+    resultado = algorithms.ruta_con_trafico(origen_id, destino_id)
+
+    if not resultado["ruta"]:
+        return {"error": "No se encontro ruta", "coords": [], "distancia": 0}
+
+    coords = []
+    for node_id in resultado["ruta"]:
+        data = algorithms.grafo.nodes[node_id]
+        coords.append([data.get("y"), data.get("x")])
+
+    return {
+        "coords": coords,
+        "distancia": resultado["distancia"],
+        "nodos": len(resultado["ruta"]),
+        "aristas": len(resultado["ruta"]) - 1,
+        "ruta_ids": [str(n) for n in resultado["ruta"]],
+        "con_trafico": True
     }
 
 if __name__ == "__main__":

@@ -142,6 +142,7 @@ async function calcularRuta() {
     const origen = document.getElementById('origen').value;
     const destino = document.getElementById('destino').value;
     const waypoint = document.getElementById('waypoint').value;
+    const usarTrafico = document.getElementById('traficoCheckbox').checked;
 
     if (!origen || !destino) {
         alert('Por favor selecciona origen y destino');
@@ -152,34 +153,40 @@ async function calcularRuta() {
     let colorRuta;
 
     try {
-        switch (routeType) {
-            case 'directa':
-                ruta = await calcularRutaDirecta(origen, destino);
-                colorRuta = '#c9a227';
-                break;
+        // Si trafico esta activado y es ruta directa, usar endpoint de trafico
+        if (usarTrafico && routeType === 'directa') {
+            ruta = await calcularRutaTrafico(origen, destino);
+            colorRuta = '#e74c3c'; // Rojo para indicar trafico
+        } else {
+            switch (routeType) {
+                case 'directa':
+                    ruta = await calcularRutaDirecta(origen, destino);
+                    colorRuta = '#c9a227';
+                    break;
 
-            case 'via':
-                if (!waypoint) {
-                    alert('Por favor selecciona un punto intermedio');
-                    return;
-                }
-                ruta = await calcularRutaVia(origen, waypoint, destino);
-                colorRuta = '#5a7cb0';
-                break;
+                case 'via':
+                    if (!waypoint) {
+                        alert('Por favor selecciona un punto intermedio');
+                        return;
+                    }
+                    ruta = await calcularRutaVia(origen, waypoint, destino);
+                    colorRuta = '#5a7cb0';
+                    break;
 
-            case 'evitar':
-                if (!waypoint) {
-                    alert('Por favor selecciona un punto a evitar');
-                    return;
-                }
-                ruta = await calcularRutaEvitando(origen, destino, waypoint);
-                colorRuta = '#ffffff';
-                break;
+                case 'evitar':
+                    if (!waypoint) {
+                        alert('Por favor selecciona un punto a evitar');
+                        return;
+                    }
+                    ruta = await calcularRutaEvitando(origen, destino, waypoint);
+                    colorRuta = '#FF9800';
+                    break;
+            }
         }
 
         if (ruta && ruta.coords) {
             dibujarRuta(ruta, colorRuta);
-            mostrarResultados(ruta);
+            mostrarResultados(ruta, usarTrafico);
         } else {
             alert('No se pudo calcular la ruta');
         }
@@ -226,18 +233,18 @@ function calcularDistancia(lat1, lon1, lat2, lon2) {
     return R * c;
 }
 
-function mostrarResultados(ruta) {
+function mostrarResultados(ruta, conTrafico = false) {
     const container = document.getElementById('resultsContainer');
     const content = document.getElementById('resultsContent');
 
     const tipoTexto = {
-        directa: 'Ruta Directa',
+        directa: conTrafico ? 'Ruta con Trafico' : 'Ruta Directa',
         via: 'Ruta via Punto',
         evitar: 'Ruta Alternativa'
     };
 
     const tipoIcono = {
-        directa: 'fa-arrows-alt-h',
+        directa: conTrafico ? 'fa-car' : 'fa-arrows-alt-h',
         via: 'fa-exchange-alt',
         evitar: 'fa-ban'
     };

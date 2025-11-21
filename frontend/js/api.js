@@ -81,3 +81,17 @@ async function getGrafoInfo() {
         return null;
     }
 }
+
+async function calcularRutaTrafico(origen, destino) {
+    try {
+        const response = await fetch(`${API_URL}/api/ruta/trafico`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ origen, destino })
+        });
+        return await response.json();
+    } catch (error) {
+        console.error('Error calculando ruta con trafico:', error);
+        return null;
+    }
+}

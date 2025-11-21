@@ -47,7 +47,6 @@ class GraphManager:
                     if 'tipo' in row:
                         self.grafo.nodes[node_id]['tipo'] = row['tipo']
                 else:
-                    # Agregar nodo nuevo (POI o interseccion personalizada)
                     self.grafo.add_node(node_id,
                         y=row['lat'],
                         x=row['lon'],

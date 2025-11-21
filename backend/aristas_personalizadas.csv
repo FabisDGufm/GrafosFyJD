@@ -376,3 +376,23 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 13206194903,2026383064,13 Calle,54.46,norte-oeste,1.0
 13206194903,13206194908,Sin nombre,96.69,sur-este,1.0
 13206194908,13206194903,Sin nombre,96.69,norte-oeste,1.0
+14206194901,3820014887,Acceso Parque 14,11.6,acceso,1.0
+3820014887,14206194901,Acceso Parque 14,11.6,acceso,1.0
+14206194902,528222043,Acceso Pollo Campero,80.4,acceso,1.0
+528222043,14206194902,Acceso Pollo Campero,80.4,acceso,1.0
+14206194903,410414372,Acceso Plaza Obelisco,53.6,acceso,1.0
+410414372,14206194903,Acceso Plaza Obelisco,53.6,acceso,1.0
+14206194904,7047606323,Acceso Plaza Espana,66.7,acceso,1.0
+7047606323,14206194904,Acceso Plaza Espana,66.7,acceso,1.0
+14206194905,283273736,Acceso CC Montufar,24.4,acceso,1.0
+283273736,14206194905,Acceso CC Montufar,24.4,acceso,1.0
+14206194906,479440916,Acceso McDonalds,72.6,acceso,1.0
+479440916,14206194906,Acceso McDonalds,72.6,acceso,1.0
+14206194907,410417455,Acceso Shell Aeropuerto,19.5,acceso,1.0
+410417455,14206194907,Acceso Shell Aeropuerto,19.5,acceso,1.0
+14206194908,9482261012,Acceso Reloj de Flores,29.2,acceso,1.0
+9482261012,14206194908,Acceso Reloj de Flores,29.2,acceso,1.0
+14206194909,410450393,Acceso Hospital Liberacion,61.4,acceso,1.0
+410450393,14206194909,Acceso Hospital Liberacion,61.4,acceso,1.0
+14206194910,528222540,Acceso SIB,15.1,acceso,1.0
+528222540,14206194910,Acceso SIB,15.1,acceso,1.0

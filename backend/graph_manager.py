@@ -46,6 +46,14 @@ class GraphManager:
                     self.grafo.nodes[node_id]['nombre'] = row['nombre']
                     if 'tipo' in row:
                         self.grafo.nodes[node_id]['tipo'] = row['tipo']
+                elif row.get('tipo') == 'POI':
+                    # Agregar POI como nuevo nodo
+                    self.grafo.add_node(node_id,
+                        y=row['lat'],
+                        x=row['lon'],
+                        nombre=row['nombre'],
+                        tipo='POI'
+                    )
             print(f"Nombres personalizados cargados desde {archNodosPerson}")
         except FileNotFoundError:
             print(f"Archivo {archNodosPerson} no encontrado, usando nombres por defecto")
@@ -139,11 +147,15 @@ class GraphManager:
             df = pd.read_csv(archAristasPerson)
             for _, row in df.iterrows():
                 u, v = row['origen'], row['destino']
+                factor = row.get('factor_trafico', 1.0)
+                dist = row['distancia']
+
                 if self.grafo.has_edge(u, v):
-                    factor = row.get('factor_trafico', 1.0)
-                    dist = self.grafo[u][v][0]['length']
                     self.grafo[u][v][0]['peso'] = dist * factor
-            print(f"Pesos personalizados cargados desde {archAristasPerson}")
+                else:
+                    # Agregar nueva arista (para POIs)
+                    self.grafo.add_edge(u, v, length=dist, peso=dist * factor, name=row.get('nombre_calle', 'Acceso'))
+            print(f"Aristas personalizadas cargadas desde {archAristasPerson}")
         except FileNotFoundError:
             print(f"Archivo {archAristasPerson} no encontrado, usando pesos por defecto")
 

@@ -30,7 +30,7 @@ zoomInit = 15
 # Confi
 API_HOST = "0.0.0.0"
 API_PORT = 8000
-
+ 
 # Rutas de archivos
 archNodosCSV = "nodos_generados.csv"
 archNodosPerson = "nodos_personalizados.csv"

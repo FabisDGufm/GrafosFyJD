@@ -1,0 +1,594 @@
+/* ========================================
+   No Waze - Estilos principales
+   Paleta: Azul marino, blanco y dorado
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background: #f5f6f8;
+}
+
+/* ========================================
+   Sidebar
+   ======================================== */
+.sidebar {
+    width: 420px;
+    background: #1a2744;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.sidebar-header {
+    padding: 28px 24px;
+    background: #1a2744;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.tagline {
+    margin-top: 4px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ========================================
+   Formulario de ruta
+   ======================================== */
+.route-form {
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.route-form h3 {
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.route-form h3 i {
+    color: #c9a227;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.input-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.input-icon i {
+    display: none;
+}
+
+.input-icon.origin {
+    background: #c9a227;
+}
+
+.input-icon.destination {
+    background: #fff;
+}
+
+.input-icon.waypoint {
+    background: #5a7cb0;
+}
+
+.route-input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.route-input:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.route-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #c9a227;
+}
+
+.route-input option {
+    background: #1a2744;
+    color: #fff;
+    padding: 10px;
+}
+
+.route-connector {
+    padding: 2px 0 2px 4px;
+}
+
+.connector-line {
+    width: 2px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 1px;
+}
+
+.btn-remove-waypoint {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-remove-waypoint:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* ========================================
+   Opciones de ruta
+   ======================================== */
+.route-options {
+    margin-top: 20px;
+}
+
+.option-label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 12px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.option-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.option-btn {
+    flex: 1;
+    padding: 12px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.option-btn i {
+    font-size: 16px;
+}
+
+.option-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.option-btn.active {
+    background: #c9a227;
+    border-color: #c9a227;
+    color: #1a2744;
+}
+
+/* ========================================
+   Boton calcular
+   ======================================== */
+.btn-calculate {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    background: #c9a227;
+    color: #1a2744;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-calculate:hover {
+    background: #d4ad32;
+}
+
+.btn-calculate:active {
+    background: #b8921f;
+}
+
+/* ========================================
+   Resultados
+   ======================================== */
+.results-container {
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    animation: slideIn 0.2s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.results-header h3 {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.results-header h3 i {
+    color: #c9a227;
+}
+
+.btn-close {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.result-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    padding: 16px;
+    border-left: 3px solid #c9a227;
+}
+
+.result-card.directa {
+    border-left-color: #c9a227;
+}
+
+.result-card.via {
+    border-left-color: #5a7cb0;
+}
+
+.result-card.evitar {
+    border-left-color: #fff;
+}
+
+.result-card h4 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.result-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stat-item i {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background: rgba(201, 162, 39, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #c9a227;
+}
+
+.stat-item .stat-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.stat-item .stat-label {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ========================================
+   Seccion POIs
+   ======================================== */
+.poi-section {
+    padding: 20px 24px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.poi-section h3 {
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.poi-section h3 i {
+    color: #c9a227;
+}
+
+.poi-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.poi-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    border: 1px solid transparent;
+}
+
+.poi-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.poi-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    background: rgba(201, 162, 39, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #c9a227;
+}
+
+.poi-info {
+    flex: 1;
+}
+
+.poi-name {
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.poi-address {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 2px;
+}
+
+/* ========================================
+   Footer del sidebar
+   ======================================== */
+.sidebar-footer {
+    padding: 16px 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.sidebar-footer p {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.sidebar-footer .version {
+    color: rgba(255, 255, 255, 0.2);
+    margin-top: 2px;
+}
+
+/* ========================================
+   Mapa
+   ======================================== */
+.map-container {
+    flex: 1;
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================================
+   Controles del mapa
+   ======================================== */
+.map-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+}
+
+.control-btn {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    background: #1a2744;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.15s ease;
+}
+
+.control-btn:hover {
+    background: #243352;
+    color: #fff;
+}
+
+/* ========================================
+   Leyenda del mapa
+   ======================================== */
+.map-legend {
+    position: absolute;
+    bottom: 28px;
+    right: 20px;
+    background: #1a2744;
+    padding: 16px 18px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.legend-item:last-child {
+    margin-bottom: 0;
+}
+
+.legend-color {
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.legend-color.poi {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #c9a227;
+}
+
+/* ========================================
+   Scrollbar personalizada
+   ======================================== */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        max-height: 50vh;
+        position: absolute;
+        bottom: 0;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .map-container {
+        height: 100vh;
+    }
+}

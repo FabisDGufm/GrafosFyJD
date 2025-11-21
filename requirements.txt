@@ -5,8 +5,8 @@ fastapi==0.104.1
 uvicorn==0.24.0
 python-multipart==0.0.6
 
-# CORS para permitir peticiones del frontend
-fastapi-cors==0.0.6
+# Validacion de datos
+pydantic==2.5.2
 
 # Manejo de grafos y mapas
 osmnx==1.7.1

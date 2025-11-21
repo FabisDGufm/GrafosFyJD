@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Waze</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <span>No Waze</span>
+            </div>
+            <p class="tagline">Guatemala City</p>
+        </div>
+
+        <div class="route-form">
+            <h3><i class="fas fa-map-marker-alt"></i> Calcular Ruta</h3>
+
+            <div class="input-group">
+                <div class="input-icon origin">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <select id="origen" class="route-input">
+                    <option value="">Selecciona origen...</option>
+                </select>
+            </div>
+
+            <div class="route-connector">
+                <div class="connector-line"></div>
+            </div>
+
+            <div class="input-group" id="waypointGroup" style="display: none;">
+                <div class="input-icon waypoint">
+                    <i class="fas fa-map-pin"></i>
+                </div>
+                <select id="waypoint" class="route-input">
+                    <option value="">Selecciona punto intermedio...</option>
+                </select>
+                <button class="btn-remove-waypoint" onclick="removeWaypoint()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="route-connector" id="connector2" style="display: none;">
+                <div class="connector-line"></div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-icon destination">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <select id="destino" class="route-input">
+                    <option value="">Selecciona destino...</option>
+                </select>
+            </div>
+
+            <div class="route-options">
+                <label class="option-label">Tipo de ruta:</label>
+                <div class="option-buttons">
+                    <button class="option-btn active" data-type="directa" onclick="setRouteType('directa')">
+                        <i class="fas fa-arrows-alt-h"></i>
+                        <span>Directa</span>
+                    </button>
+                    <button class="option-btn" data-type="via" onclick="setRouteType('via')">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span>Pasar por</span>
+                    </button>
+                    <button class="option-btn" data-type="evitar" onclick="setRouteType('evitar')">
+                        <i class="fas fa-ban"></i>
+                        <span>Evitar</span>
+                    </button>
+                </div>
+            </div>
+
+            <button class="btn-calculate" onclick="calcularRuta()">
+                <i class="fas fa-route"></i>
+                Calcular Ruta
+            </button>
+        </div>
+
+        <div class="results-container" id="resultsContainer" style="display: none;">
+            <div class="results-header">
+                <h3><i class="fas fa-info-circle"></i> Informacion de Ruta</h3>
+                <button class="btn-close" onclick="closeResults()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="results-content" id="resultsContent">
+            </div>
+        </div>
+
+        <div class="poi-section">
+            <h3><i class="fas fa-star"></i> Puntos de Interes</h3>
+            <div class="poi-list" id="poiList">
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <p>Proyecto de Grafos - Universidad</p>
+            <p class="version">v1.0</p>
+        </div>
+    </aside>
+
+    <main class="map-container">
+        <div id="map"></div>
+
+        <div class="map-controls">
+            <button class="control-btn" onclick="centerMap()" title="Centrar mapa">
+                <i class="fas fa-crosshairs"></i>
+            </button>
+            <button class="control-btn" onclick="togglePOIs()" title="Mostrar/Ocultar POIs">
+                <i class="fas fa-map-marker-alt"></i>
+            </button>
+            <button class="control-btn" onclick="toggleStreets()" title="Mostrar/Ocultar calles">
+                <i class="fas fa-road"></i>
+            </button>
+            <button class="control-btn" onclick="clearRoute()" title="Limpiar ruta">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+        </div>
+
+        <div class="map-legend">
+            <div class="legend-item">
+                <span class="legend-color" style="background: #c9a227;"></span>
+                <span>Ruta directa</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background: #5a7cb0;"></span>
+                <span>Ruta via punto</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background: #fff; border: 1px solid #999;"></span>
+                <span>Ruta evitando</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color poi"></span>
+                <span>Punto de interes</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="js/api.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

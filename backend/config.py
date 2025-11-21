@@ -1,3 +1,7 @@
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # Area dle poligono
 poli_area = [
     (14.583336980488415, -90.52132423960929),
@@ -32,8 +36,8 @@ API_HOST = "0.0.0.0"
 API_PORT = 8000
  
 # Rutas de archivos
-archNodosCSV = "nodos_generados.csv"
-archNodosPerson = "nodos_personalizados.csv"
-archAristasCSV = "aristas_generadas.csv"
-archAristasPerson = "aristas_personalizadas.csv"
-archiGrafoCache = "grafo_guatemala.graphml"
+archNodosCSV = os.path.join(BASE_DIR, "nodos_generados.csv")
+archNodosPerson = os.path.join(BASE_DIR, "nodos_personalizados.csv")
+archAristasCSV = os.path.join(BASE_DIR, "aristas_generadas.csv")
+archAristasPerson = os.path.join(BASE_DIR, "aristas_personalizadas.csv")
+archiGrafoCache = os.path.join(BASE_DIR, "grafo_guatemala.graphml")

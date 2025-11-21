@@ -478,3 +478,47 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 13206194903,2026383064,13 Calle,54.46,norte-oeste,1.0
 13206194903,13206194908,Sin nombre,96.69,sur-este,1.0
 13206194908,13206194903,Sin nombre,96.69,norte-oeste,1.0
+14206194912,14206194901,Acceso Parque 14,15.0,sur-oeste,1.0
+14206194901,14206194912,Acceso Parque 14,15.0,norte-este,1.0
+14206194913,14206194902,Acceso Pollo Campero,10.0,sur-oeste,1.0
+14206194902,14206194913,Acceso Pollo Campero,10.0,norte-este,1.0
+14206194914,14206194910,Acceso SIB,380.0,norte-este,1.0
+14206194910,14206194914,Acceso SIB,380.0,sur-oeste,1.0
+14206194915,14206194903,Acceso Plaza Obelisco,50.0,sur-oeste,1.0
+14206194903,14206194915,Acceso Plaza Obelisco,50.0,norte-este,1.0
+14206194916,14206194906,Acceso McDonalds,10.0,sur-este,1.0
+14206194906,14206194916,Acceso McDonalds,10.0,norte-oeste,1.0
+14206194917,14206194907,Acceso Shell Aeropuerto,10.0,sur-este,1.0
+14206194907,14206194917,Acceso Shell Aeropuerto,10.0,norte-oeste,1.0
+14206194918,14206194904,Acceso Plaza Espana,85.0,sur-este,1.0
+14206194904,14206194918,Acceso Plaza Espana,85.0,norte-oeste,1.0
+14206194919,14206194909,Acceso Hospital,10.0,norte-este,1.0
+14206194909,14206194919,Acceso Hospital,10.0,sur-oeste,1.0
+14206194920,14206194908,Acceso Reloj de Flores,20.0,norte-este,1.0
+14206194908,14206194920,Acceso Reloj de Flores,20.0,sur-oeste,1.0
+14206194921,14206194905,Acceso CC Montufar,15.0,norte-este,1.0
+14206194905,14206194921,Acceso CC Montufar,15.0,sur-oeste,1.0
+14206194912,3820014887,Calle a Parque 14,15.0,norte-este,1.0
+3820014887,14206194912,Calle a Parque 14,15.0,sur-oeste,1.0
+14206194913,4100532182,Calle a Pollo Campero,75.0,norte-este,1.0
+4100532182,14206194913,Calle a Pollo Campero,75.0,sur-oeste,1.0
+14206194914,410448234,Calle a SIB,10.0,norte-este,1.0
+410448234,14206194914,Calle a SIB,10.0,sur-oeste,1.0
+14206194915,410414371,Calle a Plaza Obelisco,25.0,norte-oeste,1.0
+410414371,14206194915,Calle a Plaza Obelisco,25.0,sur-este,1.0
+14206194916,479440916,Calle a McDonalds,75.0,norte-este,1.0
+479440916,14206194916,Calle a McDonalds,75.0,sur-oeste,1.0
+14206194917,14206194922,Acceso Shell a Calle,5.0,sur-este,1.0
+14206194922,14206194917,Acceso Shell a Calle,5.0,norte-oeste,1.0
+14206194922,282481401,Calle a Shell Sur,250.0,sur-este,1.0
+282481401,14206194922,Calle a Shell Sur,250.0,norte-oeste,1.0
+14206194922,479440916,Calle a Shell Norte,110.0,norte-oeste,1.0
+479440916,14206194922,Calle a Shell Norte,110.0,sur-este,1.0
+14206194918,4010444728,Calle a Plaza Espana,10.0,sur-oeste,1.0
+4010444728,14206194918,Calle a Plaza Espana,10.0,norte-este,1.0
+14206194919,410450393,Calle a Hospital,55.0,norte-este,1.0
+410450393,14206194919,Calle a Hospital,55.0,sur-oeste,1.0
+14206194920,9482261012,Calle a Reloj Flores,25.0,norte-oeste,1.0
+9482261012,14206194920,Calle a Reloj Flores,25.0,sur-este,1.0
+14206194921,283273736,Calle a CC Montufar,30.0,norte-oeste,1.0
+283273736,14206194921,Calle a CC Montufar,30.0,sur-este,1.0

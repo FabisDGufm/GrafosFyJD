@@ -32,13 +32,24 @@ function dibujarCalles(aristas) {
         if (coords && coords.length === 2) {
             const polyline = L.polyline(coords, {
                 color: '#4a4a6a',
-                weight: 2,
-                opacity: 0.6
+                weight: 3,
+                opacity: 0.7
+            });
+
+            polyline.on('mouseover', function() {
+                this.setStyle({ weight: 5, color: '#c9a227' });
+            });
+            polyline.on('mouseout', function() {
+                this.setStyle({ weight: 3, color: '#4a4a6a' });
             });
 
             polyline.bindPopup(`
-                <strong>${arista.nombre_calle || 'Sin nombre'}</strong><br>
-                Distancia: ${arista.distancia.toFixed(1)} m
+                <div class="popup-content">
+                    <h4>${arista.nombre_calle || 'Sin nombre'}</h4>
+                    <p><strong>Origen ID:</strong> ${arista.origen}</p>
+                    <p><strong>Destino ID:</strong> ${arista.destino}</p>
+                    <p><strong>Distancia:</strong> ${arista.distancia.toFixed(1)} m</p>
+                </div>
             `);
 
             streetsLayer.addLayer(polyline);

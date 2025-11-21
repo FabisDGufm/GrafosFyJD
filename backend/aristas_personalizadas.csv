@@ -1,9 +1,14 @@
 origen,destino,nombre_calle,distancia,direccion,factor_trafico
+27146055,603170084,Boulevard Liberación,96.05,sur-este,1.0
+282391143,4072279948,Boulevard Liberación,286.57,sur-este,1.0
+282391143,4066880398,Sin nombre,223.05,sur-este,1.0
 282481394,4010448614,Boulevard Liberación,117.54,norte-oeste,1.0
 282481394,283273731,2a Avenida,99.91,norte-este,1.0
 282481401,479440916,Boulevard Liberación,379.54,norte-oeste,1.0
 282481412,476530674,Boulevard Liberación,311.59,sur-este,1.0
 282481420,410449191,Boulevard Liberación,103.95,sur-este,1.0
+283273728,410462410,42 Calle,52.48,norte-oeste,1.0
+283273728,410408500,Avenida La Castellana,79.41,sur-oeste,1.0
 283273731,282481394,2a Avenida,99.91,sur-oeste,1.0
 283273731,4010448618,13 Calle,72.7,norte-oeste,1.0
 283273733,808125500,11 Calle,9.96,norte-oeste,1.0
@@ -16,10 +21,15 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 410407928,6037880180,12 Calle,20.01,norte-este,1.0
 410407928,3820122587,Sin nombre,18.61,sur-este,1.0
 410407928,410451991,Avenida Reforma,136.73,sur-oeste,1.0
+410408024,410408500,Sin nombre,28.44,norte-oeste,1.0
+410408024,6135927164,Avenida La Castellana,24.51,sur-oeste,1.0
+410408500,4066895530,Avenida La Castellana,9.35,norte-oeste,1.0
+410408502,410462410,18 Avenida,82.76,norte-este,1.0
 410414371,410414372,Plaza Obelisco,14.25,sur-oeste,1.0
 410414372,11839402225,Boulevard Liberación,39.77,sur-oeste,1.0
 410414372,410450475,Plaza Obelisco,168.44,sur-oeste,1.0
 410414411,410453366,Avenida Reforma,143.52,norte-este,1.0
+410414411,4029076273,Sin nombre,50.41,norte-este,1.0
 410417455,282481412,Boulevard Liberación,49.97,sur-este,1.0
 410443328,7127559418,6a Avenida,8.63,sur-oeste,1.0
 410443328,12636185688,14 Calle,9.99,sur-este,1.0
@@ -30,7 +40,7 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 410449191,410449457,Boulevard Liberación,28.81,sur-este,1.0
 410449457,410450390,Boulevard Liberación,84.82,sur-este,1.0
 410449457,528223218,15 Avenida,335.15,sur-oeste,1.0
-410449457,289764727,"['Boulevard Liberación', 'Boulevard Los Próceres']",361.77,sur-este,1.0
+410449457,289764727,"['Boulevard Los Próceres', 'Boulevard Liberación']",361.77,sur-este,1.0
 410449859,2026383067,7a Avenida,86.05,norte-oeste,1.0
 410449859,476530754,Boulevard Liberación,40.05,norte-oeste,1.0
 410450106,528176508,Sin nombre,29.72,sur-oeste,1.0
@@ -45,7 +55,21 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 410452879,2026383067,16 Calle,217.89,norte-oeste,1.0
 410452879,11825812432,Avenida Reforma,129.96,sur-oeste,1.0
 410453224,4696504126,Avenida Reforma,27.36,sur-oeste,1.0
+410453350,410453363,Avenida Reforma,25.55,norte-este,1.0
+410453351,410453741,14 Calle,107.37,sur-este,1.0
+410453351,410456324,Avenida Reforma,155.0,norte-este,1.0
+410453363,410453366,Sin nombre,41.3,norte-oeste,1.0
+410453363,410455814,Avenida Reforma,121.95,norte-este,1.0
 410453366,4029058302,Avenida Reforma,81.31,norte-este,1.0
+410455571,11583024564,Avenida Reforma,129.48,norte-este,1.0
+410455571,410455624,12 Calle,103.66,sur-este,1.0
+410455624,410456323,1a Avenida,153.19,sur-oeste,1.0
+410455814,4029058302,15 Calle,12.86,norte-oeste,1.0
+410455814,4029076275,Avenida Reforma,72.64,norte-este,1.0
+410456323,410456324,13 Calle,103.05,norte-oeste,1.0
+410456323,410453741,1a Avenida,151.41,sur-oeste,1.0
+410456324,3835760560,Avenida Reforma,60.3,norte-este,1.0
+410456324,1507538281,13 Calle,14.26,norte-oeste,1.0
 410456359,410461982,6a Avenida,141.78,sur-oeste,1.0
 410456359,412197887,11 Calle,131.25,norte-oeste,1.0
 410461952,410462008,6a Avenida,12.84,sur-oeste,1.0
@@ -57,9 +81,18 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 410462006,410462008,Calle Montúfar,14.22,sur-este,1.0
 410462008,990336926,Calle Montúfar,47.76,sur-este,1.0
 410462008,956415284,6a Avenida,139.95,sur-oeste,1.0
+410462410,283273728,42 Calle,52.48,sur-este,1.0
+410462410,410408502,18 Avenida,82.76,sur-oeste,1.0
 410698239,528214431,11 Calle,28.57,norte-oeste,1.0
 410698239,528214672,Avenida Las Américas,73.66,sur-oeste,1.0
 410698241,528223050,Avenida Las Américas,111.95,sur-oeste,1.0
+410699007,12310652523,Avenida Las Américas,82.65,norte-este,1.0
+410699008,410699007,Avenida Las Américas,42.58,norte-este,1.0
+410699008,611873524,9a Calle,42.28,sur-este,1.0
+410699009,410698239,Sin nombre,71.2,norte-oeste,1.0
+410699009,528142594,Avenida Las Américas,54.5,norte-este,1.0
+410699012,11098923842,12 Calle,32.42,sur-este,1.0
+410699012,528142720,Avenida Las Américas,82.8,norte-este,1.0
 412197885,412198003,Calle Montúfar,11.64,norte-oeste,1.0
 412197885,412197887,5a Avenida,142.09,norte-este,1.0
 412197887,412198005,11 Calle,11.9,norte-oeste,1.0
@@ -75,7 +108,11 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 412198062,412198045,Calle Montúfar,69.64,norte-oeste,1.0
 412198093,412198057,11 Calle,39.78,norte-oeste,1.0
 412198254,1909302010,11 Calle,21.13,norte-oeste,1.0
-413315361,4066848948,"['Avenida Las Américas', 'Plaza Obelisco']",244.96,norte-este,1.0
+412285320,410455814,15 Calle,105.54,norte-oeste,1.0
+413315361,4066848948,"['Plaza Obelisco', 'Avenida Las Américas']",244.96,norte-este,1.0
+429839894,4398381662,Avenida Las Américas,185.15,norte-este,1.0
+429839894,12194576841,7a Calle,65.21,sur-este,1.0
+429840030,611873524,9a Calle,50.41,norte-oeste,1.0
 476530617,410447728,Avenida Hincapié,88.92,sur-este,1.0
 476530617,6145873709,Sin nombre,72.28,sur-este,1.0
 476530674,410447728,Sin nombre,179.21,sur-este,1.0
@@ -132,14 +169,30 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 481805126,7047752412,Avenida Reforma,16.68,sur-oeste,1.0
 481805126,481805128,Sin nombre,52.87,norte-este,1.0
 481805128,481805139,Avenida Reforma,8.15,norte-este,1.0
+481805128,410453351,Sin nombre,12.03,norte-este,1.0
 481805137,4026532936,Avenida Reforma,24.64,sur-oeste,1.0
 481805137,481805139,Sin nombre,46.57,sur-este,1.0
 481805139,1507538281,Avenida Reforma,152.5,norte-este,1.0
+481805139,410453351,Sin nombre,10.74,sur-este,1.0
+516392098,516392107,Avenida Reforma,75.3,sur-oeste,1.0
+516392101,516392098,Sin nombre,23.82,sur-oeste,1.0
+516392101,4026495402,Avenida Reforma,122.45,sur-oeste,1.0
+516392104,323585956,11 Calle,13.42,norte-oeste,1.0
+516392107,516392104,11 Calle,217.84,norte-oeste,1.0
+516392107,4026495402,Sin nombre,30.24,sur-este,1.0
+516392107,3820122586,Avenida Reforma,137.29,sur-oeste,1.0
+516392110,3820122589,Sin nombre,46.65,sur-este,1.0
+516392110,6037880180,Avenida Reforma,59.61,sur-oeste,1.0
 516392127,516392130,Sin nombre,23.07,sur-oeste,1.0
 516392127,516392128,Avenida Reforma,17.54,sur-oeste,1.0
 516392128,516392130,Sin nombre,8.14,sur-oeste,1.0
 516392128,410414371,Avenida Reforma,233.4,sur-oeste,1.0
 516392130,410453224,Sin nombre,11.39,sur-oeste,1.0
+528142594,410699008,Avenida Las Américas,110.24,norte-este,1.0
+528142720,11098923841,11 Calle,54.97,sur-este,1.0
+528142720,410699009,Avenida Las Américas,24.14,norte-este,1.0
+528148701,3834877579,6a Calle,10.28,sur-este,1.0
+528148701,12194576841,"['7a Calle', '2a Avenida']",81.14,sur-oeste,1.0
 528171278,12182615094,Avenida Hincapié,73.73,sur-oeste,1.0
 528171278,528223038,6a Calle,120.2,sur-este,1.0
 528171278,528223064,Avenida Hincapié,207.91,norte-este,1.0
@@ -147,8 +200,12 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 528171280,12182615094,Avenida Hincapié,107.44,norte-este,1.0
 528171280,957679548,Avenida Hincapié,158.37,sur-oeste,1.0
 528176344,12092704997,11 Calle,26.26,sur-este,1.0
+528176344,528177352,Avenida Hincapié,62.98,sur-oeste,1.0
 528176351,528202619,11 Calle,73.09,sur-este,1.0
 528176508,11658600808,11 Calle,29.06,norte-oeste,1.0
+528177349,528176351,Sin nombre,55.14,norte-este,1.0
+528177349,12092704997,Avenida Hincapié,31.35,norte-este,1.0
+528177352,528177349,Avenida Hincapié,26.82,norte-este,1.0
 528177373,12092704999,11 Calle,21.3,norte-oeste,1.0
 528177373,528178078,Sin nombre,63.03,norte-oeste,1.0
 528178078,410448234,Avenida Hincapié,42.62,sur-oeste,1.0
@@ -169,6 +226,7 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 528215918,528202626,11 Calle,15.92,norte-oeste,1.0
 528215918,410450394,Sin nombre,30.24,norte-oeste,1.0
 528216862,631824894,11 Calle,17.35,sur-este,1.0
+528216862,11867040946,15 Avenida A,13.46,sur-oeste,1.0
 528217379,3834877533,Avenida Las Américas,77.31,sur-oeste,1.0
 528221928,528222059,9a Calle,11.3,sur-este,1.0
 528221928,4038754533,15 Avenida,137.14,sur-oeste,1.0
@@ -211,8 +269,16 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 528223778,528223222,15 Avenida A,209.52,norte-este,1.0
 528223778,528223050,6a Calle,80.9,sur-este,1.0
 528223778,528223048,6a Calle,79.5,norte-oeste,1.0
+603170052,283273701,6a Avenida,33.56,sur-oeste,1.0
+603170062,11825678559,Calle Montúfar,34.55,norte-oeste,1.0
+603170062,603170069,Sin nombre,192.43,norte-oeste,1.0
+603170063,6135927164,Diagonal 12,149.98,norte-oeste,1.0
 603170063,603170062,Calle Montúfar,25.03,norte-oeste,1.0
+603170084,6135927153,Boulevard Liberación,6.71,sur-este,1.0
+603170113,603170069,Boulevard Liberación,239.73,norte-oeste,1.0
 611744650,528171280,8a Calle,69.35,norte-oeste,1.0
+611873524,410699007,9a Calle,50.54,norte-oeste,1.0
+611873524,429840030,9a Calle,50.41,sur-este,1.0
 616286902,631824855,13 Calle,30.55,norte-oeste,1.0
 616286902,12318905768,6a Avenida A,191.76,sur-oeste,1.0
 631824855,990336926,6a Avenida A,139.76,norte-este,1.0
@@ -222,6 +288,8 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 631825279,4066825507,Sin nombre,66.93,sur-este,1.0
 631825279,410450475,Boulevard Liberación,194.01,sur-este,1.0
 631825286,410449859,Boulevard Liberación,125.96,norte-oeste,1.0
+708248852,283273701,Sin nombre,33.32,sur-oeste,1.0
+708248852,11825678559,Sin nombre,43.22,sur-este,1.0
 726943232,479440905,14 Calle,9.66,sur-este,1.0
 754617198,957679530,3a Calle,46.29,norte-oeste,1.0
 790843467,479440921,13 Calle,67.05,norte-oeste,1.0
@@ -273,27 +341,38 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 3820122586,410407928,Avenida Reforma,11.47,sur-oeste,1.0
 3820122587,1507538284,Avenida Reforma,117.21,sur-oeste,1.0
 3820122589,410455571,Sin nombre,14.87,sur-este,1.0
+3820122589,11583024563,Avenida Reforma,95.14,norte-este,1.0
 3820122590,3820122589,Avenida Reforma,10.55,norte-este,1.0
 3820122590,410455571,12 Calle,13.29,norte-este,1.0
 3820122597,1963135143,6a Avenida A,147.42,sur-oeste,1.0
 3820122597,12318905768,14 Calle,35.33,sur-este,1.0
 3820122597,12636185688,14 Calle,37.92,norte-oeste,1.0
+3834877532,3834877538,Sin nombre,80.77,sur-este,1.0
 3834877533,3834877532,Avenida Las Américas,6.34,sur-oeste,1.0
+3834877538,410699012,Avenida Las Américas,158.53,norte-este,1.0
+3834877579,528148701,6a Calle,10.28,norte-oeste,1.0
+3835760559,3835760560,Sin nombre,28.9,norte-este,1.0
 3835760559,3820122590,Avenida Reforma,111.72,norte-este,1.0
+3835760560,410455571,Avenida Reforma,89.78,norte-este,1.0
 3835760570,3835760571,Sin nombre,30.89,sur-este,1.0
 3835760570,4026532935,Avenida Reforma,45.58,sur-oeste,1.0
 3835760571,481805137,Avenida Reforma,18.42,sur-oeste,1.0
 4010444728,410407928,12 Calle,157.32,sur-este,1.0
 4010444728,3820122586,12 Calle,161.97,sur-este,1.0
+4010444728,516392104,"['7a Avenida', 'Plaza España']",183.21,norte-oeste,1.0
 4010448614,11653915796,Boulevard Liberación,63.68,norte-oeste,1.0
 4010448618,4010448614,13 Calle,40.26,sur-oeste,1.0
 4010448618,11653915796,13 Calle,82.66,norte-oeste,1.0
+4026495402,516392110,Avenida Reforma,46.98,sur-oeste,1.0
 4026532935,4026532936,Sin nombre,28.14,sur-este,1.0
 4026532935,481805124,Avenida Reforma,97.32,sur-oeste,1.0
 4026532936,481805126,Avenida Reforma,54.98,sur-oeste,1.0
 4029058302,4029076274,Avenida Reforma,43.98,norte-este,1.0
 4029058302,516392128,15 Calle,34.07,norte-oeste,1.0
+4029076273,410453350,Avenida Reforma,26.83,norte-este,1.0
 4029076274,481805128,Avenida Reforma,98.65,norte-este,1.0
+4029076274,4029076275,Sin nombre,32.0,norte-este,1.0
+4029076275,410453351,Avenida Reforma,74.94,norte-este,1.0
 4038754533,4038754534,Sin nombre,11.25,sur-este,1.0
 4038754533,410450106,15 Avenida,71.54,sur-oeste,1.0
 4038754534,4038754533,Sin nombre,11.25,norte-oeste,1.0
@@ -304,10 +383,13 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 4066829230,9482261012,Boulevard Liberación,38.42,norte-oeste,1.0
 4066848948,4066848949,Plaza Obelisco,20.35,norte-este,1.0
 4066848949,2054782996,Plaza Obelisco,104.39,norte-este,1.0
+4066880398,479440915,Calle Montúfar,445.81,sur-este,1.0
+4066895530,410408502,Diagonal 12,69.75,norte-oeste,1.0
 4072279948,410417455,Boulevard Liberación,388.26,sur-este,1.0
 4087230806,726943232,5a Avenida,191.06,sur-oeste,1.0
 4087230806,479440919,13 Calle,71.25,norte-oeste,1.0
 4100532182,528222043,Avenida Las Américas,162.34,sur-oeste,1.0
+4398381662,9152508296,Avenida Las Américas,28.14,norte-este,1.0
 4696504125,4696504126,15 Calle A,75.47,sur-este,1.0
 4696504126,410452879,Avenida Reforma,101.2,sur-oeste,1.0
 4696504126,4696504125,15 Calle A,75.47,norte-oeste,1.0
@@ -318,11 +400,17 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 5764198882,528222460,8a Calle,61.88,norte-oeste,1.0
 6037880180,3820122587,Avenida Reforma,25.74,sur-oeste,1.0
 6037880180,3820122590,12 Calle,32.82,norte-este,1.0
+6135927153,282391143,Boulevard Liberación,81.43,sur-este,1.0
+6135927153,708248852,Sin nombre,71.59,sur-este,1.0
+6135927164,4066895530,Diagonal 12,38.34,norte-oeste,1.0
 6145873709,410449191,Sin nombre,15.94,norte-este,1.0
 7047606323,479441026,Plaza España,94.97,norte-oeste,1.0
 7047606323,11583042385,Plaza España,10.6,sur-este,1.0
 7047752412,516392127,Avenida Reforma,69.91,sur-oeste,1.0
+7124905985,410408024,Avenida La Castellana,17.07,sur-oeste,1.0
 7127559418,12636194325,6a Avenida,6.02,sur-oeste,1.0
+9152508296,413315361,Avenida Las Américas,128.57,norte-este,1.0
+9152508296,410698241,Sin nombre,72.24,norte-oeste,1.0
 9482261012,282481401,Boulevard Liberación,54.18,norte-oeste,1.0
 9716924055,410447626,6a Avenida,31.89,sur-oeste,1.0
 9716924055,9482261012,6a Avenida,197.25,sur-oeste,1.0
@@ -330,6 +418,13 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 9716924063,12079442910,7a Avenida,11.3,norte-este,1.0
 9716924063,12079442907,Sin nombre,21.05,norte-este,1.0
 10858926469,4066829230,Boulevard Liberación,31.05,norte-oeste,1.0
+11098923839,11098923842,Sin nombre,6.61,sur-oeste,1.0
+11098923840,11098923841,Sin nombre,9.69,norte-este,1.0
+11098923841,528142720,11 Calle,54.97,norte-oeste,1.0
+11098923841,11098923840,Sin nombre,9.69,sur-oeste,1.0
+11098923842,11098923839,Sin nombre,6.61,norte-este,1.0
+11583024563,11583024564,Sin nombre,30.64,norte-este,1.0
+11583024564,410454699,Avenida Reforma,33.49,norte-este,1.0
 11583042385,4010444728,Plaza España,95.87,norte-este,1.0
 11583042405,479441026,Plaza España,12.77,sur-oeste,1.0
 11583042405,323585956,"['7a Avenida', 'Plaza España']",170.87,norte-este,1.0
@@ -338,8 +433,10 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 11658600807,11658600808,Sin nombre,48.69,sur-oeste,1.0
 11658600808,528177373,11 Calle,29.72,norte-oeste,1.0
 11658600808,11658600807,Sin nombre,48.69,norte-este,1.0
+11825678559,603170052,Calle Montúfar,7.93,sur-oeste,1.0
 11825812432,631825286,Boulevard Liberación,24.36,norte-oeste,1.0
 11839402225,11825812432,Boulevard Liberación,3.24,norte-oeste,1.0
+11867040946,528216862,15 Avenida A,13.46,norte-este,1.0
 11867040947,323102405,Avenida Las Américas,10.74,sur-oeste,1.0
 11867040947,11867040948,Sin nombre,34.89,sur-oeste,1.0
 11867040948,3820014869,Sin nombre,23.55,sur-oeste,1.0
@@ -364,8 +461,13 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 12182615094,528171278,Avenida Hincapié,73.73,norte-este,1.0
 12182615094,12182615084,Sin nombre,10.01,sur-este,1.0
 12182615094,528171280,Avenida Hincapié,107.44,sur-oeste,1.0
+12194576841,528148701,"['7a Calle', '2a Avenida']",81.14,norte-este,1.0
+12194576841,429839894,7a Calle,65.21,norte-oeste,1.0
+12194576841,12310652523,Sin nombre,160.09,sur-oeste,1.0
 12196993484,528222646,7a Calle,13.86,norte-oeste,1.0
 12196993485,528222540,7a Calle A,12.74,norte-oeste,1.0
+12310652523,3820014887,Avenida Las Américas,82.16,norte-este,1.0
+12310652523,12194576841,Sin nombre,160.09,norte-este,1.0
 12318905768,616286902,6a Avenida A,191.76,norte-este,1.0
 12318905768,481805122,14 Calle,99.84,sur-este,1.0
 12318905768,3820122597,14 Calle,35.33,norte-oeste,1.0
@@ -376,23 +478,3 @@ origen,destino,nombre_calle,distancia,direccion,factor_trafico
 13206194903,2026383064,13 Calle,54.46,norte-oeste,1.0
 13206194903,13206194908,Sin nombre,96.69,sur-este,1.0
 13206194908,13206194903,Sin nombre,96.69,norte-oeste,1.0
-14206194901,3820014887,Acceso Parque 14,11.6,acceso,1.0
-3820014887,14206194901,Acceso Parque 14,11.6,acceso,1.0
-14206194902,528222043,Acceso Pollo Campero,80.4,acceso,1.0
-528222043,14206194902,Acceso Pollo Campero,80.4,acceso,1.0
-14206194903,410414372,Acceso Plaza Obelisco,53.6,acceso,1.0
-410414372,14206194903,Acceso Plaza Obelisco,53.6,acceso,1.0
-14206194904,7047606323,Acceso Plaza Espana,66.7,acceso,1.0
-7047606323,14206194904,Acceso Plaza Espana,66.7,acceso,1.0
-14206194905,283273736,Acceso CC Montufar,24.4,acceso,1.0
-283273736,14206194905,Acceso CC Montufar,24.4,acceso,1.0
-14206194906,479440916,Acceso McDonalds,72.6,acceso,1.0
-479440916,14206194906,Acceso McDonalds,72.6,acceso,1.0
-14206194907,410417455,Acceso Shell Aeropuerto,19.5,acceso,1.0
-410417455,14206194907,Acceso Shell Aeropuerto,19.5,acceso,1.0
-14206194908,9482261012,Acceso Reloj de Flores,29.2,acceso,1.0
-9482261012,14206194908,Acceso Reloj de Flores,29.2,acceso,1.0
-14206194909,410450393,Acceso Hospital Liberacion,61.4,acceso,1.0
-410450393,14206194909,Acceso Hospital Liberacion,61.4,acceso,1.0
-14206194910,528222540,Acceso SIB,15.1,acceso,1.0
-528222540,14206194910,Acceso SIB,15.1,acceso,1.0

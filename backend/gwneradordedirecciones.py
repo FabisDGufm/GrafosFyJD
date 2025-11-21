@@ -44,14 +44,15 @@ def main():
         "¿Cuántas filas quieres procesar? (ENTER = todas, o escribe un número para prueba): "
     ).strip()
 
+    limite = None
     if limite_input != "":
         try:
             limite = int(limite_input)
             if limite <= 0:
                 print("Número no válido, se procesarán todas las filas.")
+                limite = None
             else:
-                df = df.head(limite)
-                print(f"Se procesarán solo las primeras {len(df)} filas.")
+                print(f"Se procesarán solo las primeras {limite} filas.")
         except ValueError:
             print("Entrada no válida, se procesarán todas las filas.")
     else:
@@ -105,15 +106,21 @@ def main():
             return None
 
     # 5. Aplicar con progreso
-    direcciones = []
-    total_procesar = len(df)
+    total_procesar = limite if limite else len(df)
 
-    for i, row in df.iterrows():
-        direccion = obtener_direccion(row, i, total_procesar)
-        direcciones.append(direccion)
+    if "direccion" not in df.columns:
+        df["direccion"] = None
 
-    # 6. Añadir columna 'direccion' sin tocar 'nombre'
-    df["direccion"] = direcciones
+    contador = 0
+    for idx, row in df.iterrows():
+        if limite and contador >= limite:
+            break
+        if pd.isna(row.get("direccion")) or row.get("direccion") == "" or row.get("direccion") is None:
+            direccion = obtener_direccion(row, contador, total_procesar)
+            df.at[idx, "direccion"] = direccion
+        else:
+            print(f"[{contador+1}/{total_procesar}] Ya tiene direccion, saltando...")
+        contador += 1
 
     # 7. Nombre de salida
     nombre_salida_defecto = "intersecciones_con_dir.csv"

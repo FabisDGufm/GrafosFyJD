@@ -47,13 +47,14 @@ class GraphManager:
                     if 'tipo' in row:
                         self.grafo.nodes[node_id]['tipo'] = row['tipo']
                 elif row.get('tipo') == 'POI':
-                    # Agregar POI como nuevo nodo
                     self.grafo.add_node(node_id,
                         y=row['lat'],
                         x=row['lon'],
                         nombre=row['nombre'],
-                        tipo='POI'
+                        tipo='POI',
+                        direccion=row.get('direccion', '')
                     )
+                    print(f"  POI agregado: {row['nombre']} (ID: {node_id})")
             print(f"Nombres personalizados cargados desde {archNodosPerson}")
         except FileNotFoundError:
             print(f"Archivo {archNodosPerson} no encontrado, usando nombres por defecto")
